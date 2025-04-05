@@ -1,348 +1,254 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!----Bootstrap CSS-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Medico Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!----Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
     <style>
-      .hero-section{
-        background:linear-gradient(135deg,#6366f1 0%,#a855f7 100%);
-        padding:120px 0;
+      .hero-section {
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        padding: 120px 0;
         min-height: 100vh;
       }
-      .services-icon{
-        width:64px;
-        height:64px;
-        background:#6366f1;
-        color:white; 
-        border-radius:12px;
-        align-items:center;
-        display:flex;
-        justify-content:center;
-        font-size:20px;
-        margin-bottom:1rem;
+      .services-icon {
+        width: 64px;
+        height: 64px;
+        background: #6366f1;
+        color: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-bottom: 1rem;
       }
       h5 {
-          margin-bottom: 5px;
-        }
-
-.doctors {
-    margin-top: 10px; 
-}
-
-      .card{
-        border:none;
-        transition:transform 0.3s ease-in-out;
+        margin-bottom: 5px;
+      }
+      .doctors {
+        margin-top: 10px;
+      }
+      .card {
+        border: none;
+        transition: transform 0.3s ease-in-out;
       }
       .card:hover {
         transform: translateY(-5px);
       }
-      .testimonial-img{
-        width :80px;
+      .testimonial-img {
+        width: 80px;
         height: 80px;
-        border-radius:50%;
-        object-fit:cover;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 1rem;
       }
-      .social-links{
-        text-decoration:none;
-
+      .social-links {
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
-    <!---Navbar Begins-->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
       <div class="container">
         <a href="#" class="navbar-brand fw-bold text-primary">
-          <i class="bi bi-boxes"></i>Medico Online
+          <i class="bi bi-boxes"></i> Medico Online
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#services">services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary ms-2" href="#contact">Book now!!</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="btn btn-primary ms-2" href="#contact">Book Now!</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <nav>
 
-    </nav>
-    <!---Navbar Ends-->
-    <!---hero section-->
-    <section class="hero-section text-white align-items-center">
+    <section class="hero-section text-white d-flex align-items-center">
       <div class="container">
         <div class="row align-items-center gy-5">
           <div class="col-lg-6 text-center text-lg-start">
             <h1 class="display-4 fw-bold mb-4">Medico – Your On-Demand Medical Care Solution</h1>
-            <p class="lead mb-4">Medico is a cutting-edge online medical treatment platform that connects patients with 
-              certified doctors who provide home consultations. </p>
-            <div class="d-flex flex-colum flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-              <a  class="btn btn-light btn-lg w-100 w-sm-auto " href="#contact">Get Started</a>
-              <a  class="btn btn-outline-light btn-lg w-100 w-sm-auto " href="#contact">Learn MOre</a>
+            <p class="lead mb-4">Medico is a cutting-edge online medical treatment platform that connects patients with certified doctors who provide home consultations.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+              <a class="btn btn-light btn-lg" href="#contact">Get Started</a>
+              <a class="btn btn-outline-light btn-lg" href="#contact">Learn More</a>
             </div>
           </div>
           <div class="col-lg-6 text-center">
-          <img 
-          class="img-fluid rounded-4 shadow"
-          src= "C:\Users\k maha lakshmi\OneDrive\Desktop\web\female-doctor-doing-online-checkup-9781943-8006200.webp" alt="">
-        </div>
+            <img class="img-fluid rounded-4 shadow" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Online doctor consultation" />
+          </div>
         </div>
       </div>
     </section>
+
     <section id="services" class="py-5">
       <div class="container py-5">
         <div class="text-center mb-5">
-          <div class="text-center mb-5">
-        <h2 class="fw-bold">Amazing services</h2>
-        <p class="text-muted"> Whether it's a routine checkup, urgent care, or specialized treatment, Medico ensures that quality healthcare is just a click away. </p>
-      </div>
-      </div>
-      <!-----feature 1-->
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 p-4">
-            <div class="services-icon">
-              <i class="bi bi-house-door"></i>
+          <h2 class="fw-bold">Amazing Services</h2>
+          <p class="text-muted">Whether it's a routine checkup, urgent care, or specialized treatment, Medico ensures that quality healthcare is just a click away.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="services-icon"><i class="bi bi-house-door"></i></div>
+              <h4>Home Visit by Doctors</h4>
+              <p class="text-muted">Book a certified doctor for in-home medical consultation.</p>
             </div>
-            <h4>Home Visit by Doctors</h4>
-            <p class="text-muted">
-              Book a certified doctor for in-home medical consultation.
-            </p>
           </div>
-        </div> 
-        <!---feature 2-->
-        <div class="col-md-4">
-          <div class="card h-100 p-4">
-            <div class="services-icon">
-              <i class="bi bi-hospital"></i>
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="services-icon"><i class="bi bi-hospital"></i></div>
+              <h4>Lab Test at Home</h4>
+              <p class="text-muted">Schedule diagnostic tests with sample collection at your doorstep.</p>
             </div>
-            <h4> Lab Test at Home</h4>
-            <p class="text-muted">
-              Schedule diagnostic tests with sample collection at your doorstep.
-            </p>
           </div>
-        </div> 
-        <!----feature 3---->
-         <div class="col-md-4">
-          <div class="card h-100 p-4">
-            <div class="services-icon">
-              <i class="bi bi-truck"></i>
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="services-icon"><i class="bi bi-truck"></i></div>
+              <h4>Medicine Delivery</h4>
+              <p class="text-muted">Get prescribed medicines delivered to your home.</p>
             </div>
-            <h4>Medicine Delivery</h4>
-            <p class="text-muted">
-              Get prescribed medicines delivered to your home.
-            </p>
           </div>
         </div>
       </div>
-    </div>
     </section>
-    <!-- Pricing Section -->
-<section id="pricing" class="bg-light py-5">
-  <div class="container py-5">
-    <div class="text-center mb-5">
-      <h2>Pricing Plans – Affordable & Transparent Healthcare</h2>
-      <p class="text-muted">Choose the plan that works for you</p>
-    </div>
-    
-    <div class="row g-4">
-      <!-- Basic Plan -->
-      <div class="col-lg-4">
-        <div class="card pricing h-100 p-4">
-          <div class="card-body">
-            <h5 class="text-muted">Basic-plan</h5>
-            <h2 class="display-4 fw-bold mb-4">
-              $29<small class="fs-6">month</small>
-            </h2>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i> 24/7 Online Consultation
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i>  E-Prescriptions & Health Reports
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i> Health Monitoring Dashboard
-              </li>
-            </ul>
-            <a class="btn btn-outline-primary w-100" href="#">Get Started</a>
-          </div>
-        </div>
-      </div>
-      <!-- Pro Plan -->
-      <div class="col-lg-4">
-        <div class="card pricing h-100 p-4">
-          <div class="card-body">
-            <span class="badge bg-primary mb-2">Pro plan</span>
-            <h5 class="text-muted">Pro</h5>
-            <h2 class="display-4 fw-bold mb-4">
-              $59<small class="fs-6">/month</small>
-            </h2>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i>Everything in Basic Plan
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i>Priority Doctor Availability
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i> Specialist Consultation 
-              </li>
-            </ul>
-            <a class="btn btn-primary w-100" href="#">Get Started</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Enterprise Plan -->
-      <div class="col-lg-4">
-        <div class="card pricing h-100 p-4">
-          <div class="card-body">
-            <span class="badge bg-primary mb-2">Best Value</span>
-            <h5 class="text-muted">Enterprise</h5>
-            <h2 class="display-4 fw-bold mb-4">
-              $99<small class="fs-6">/month</small>
-            </h2>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i>Everything in Pro Plan
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i> Dedicated Health Manager for Guidance
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check text-primary me-2"></i> Personalized Health Plans & Regular Follow-ups
-              </li>
-            </ul>
-            <a class="btn btn-primary w-100" href="#">Get Started</a>
-          </div>
+    <section id="pricing" class="bg-light py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2>Pricing Plans – Affordable & Transparent Healthcare</h2>
+          <p class="text-muted">Choose the plan that works for you</p>
         </div>
-      </div>
-    </div> <!-- Closing Row -->
-  </div>
-</section>
-<!---Testimonials-->
-<section id="testimonials" class="py-5">
-  <div class="container py-5">
-    <div class="text-center ">
-      <h2  class="fw-bold">What Our Patients Say </div>
-      <h4 class=" text-center fw-3 ">Your health our responsibility!!</h3>
-    </div>
-    <div class="row g-4">
-      <!----Testimonials 1-->
-      <div class="col-md-4">
-        <div class="card h-100 p-4">
-          <div class="d-flex align-items mbg-4">
-            <img class="testimonial-img" src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\testimonia1.jpeg" alt="Doctor1">
-           <div>
-            <h5 class="mb-3 mb-1">John Doe</h5>
-           </div> 
-           <br>
-           <p class="mt-2 text-muted doctors py-5" ><i>I booked an online consultation, even had medicines delivered to my doorstep. Highly recommend!</i></p>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card pricing h-100 p-4">
+              <div class="card-body">
+                <h5 class="text-muted">Basic Plan</h5>
+                <h2 class="display-4 fw-bold mb-4">$29 <small class="fs-6">/month</small></h2>
+                <ul class="list-unstyled mb-4">
+                  <li><i class="bi bi-check text-primary me-2"></i>24/7 Online Consultation</li>
+                  <li><i class="bi bi-check text-primary me-2"></i>E-Prescriptions & Health Reports</li>
+                  <li><i class="bi bi-check text-primary me-2"></i>Health Monitoring Dashboard</li>
+                </ul>
+                <a class="btn btn-outline-primary w-100" href="#">Get Started</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-        <!----Testimonials 2-->
-        <div class="col-md-4">
-          <div class="card h-100 p-4">
-            <div class="d-flex align-items mbg-4">
-              <img class="testimonial-img" src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\testimonia2.jpeg" alt="Doctor1">
-             <div>
-              <h5 class="mb-3 mb-1">harika padala</h5>
-             </div>
-             <br>
-             <p class="mt-2 text-muted doctors pt-5" ><i>I needed a doctor for my elderly parents, and Medico’s home visit service was a lifesaver</i></p>
+          <div class="col-lg-4">
+            <div class="card pricing h-100 p-4">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Pro Plan</span>
+                <h5 class="text-muted">Pro</h5>
+                <h2 class="display-4 fw-bold mb-4">$59 <small class="fs-6">/month</small></h2>
+                <ul class="list-unstyled mb-4">
+                  <li><i class="bi bi-check text-primary me-2"></i>Everything in Basic Plan</li>
+                  <li><i class="bi bi-check text-primary me-2"></i>Priority Doctor Availability</li>
+                  <li><i class="bi bi-check text-primary me-2"></i>Specialist Consultation</li>
+                </ul>
+                <a class="btn btn-primary w-100" href="#">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card pricing h-100 p-4">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Best Value</span>
+                <h5 class="text-muted">Enterprise</h5>
+                <h2 class="display-4 fw-bold mb-4">$99 <small class="fs-6">/month</small></h2>
+                <ul class="list-unstyled mb-4">
+                  <li><i class="bi bi-check text-primary me-2"></i>Everything in Pro Plan</li>
+                  <li><i class="bi bi-check text-primary me-2"></i>Dedicated Health Manager</li>
+                  <li><i class="bi bi-check text-primary me-2"></i>Personalized Health Plans</li>
+                </ul>
+                <a class="btn btn-primary w-100" href="#">Get Started</a>
+              </div>
             </div>
           </div>
         </div>
-          <!----Testimonials 3-->
-      <div class="col-md-4">
-        <div class="card h-100 p-4">
-          <div class="d-flex align-items mbg-4">
-            <img class="testimonial-img" src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\testimonia3.jpeg" alt="Doctor1">
-           <div>
-            <h5 class="mb-3 mb-1">peter burg</h5>
-           </div> 
-           <p class="mt-2 text-muted doctors pt-5" ><i>I had an issue with my skin, and within minutes, I was connected to a dermatologist who guided me with the right treatment.</i></p>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-</section>
-<!--Contact-->
-<section id="contact" class="bg-light py-5">
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <div class="card shadow-sm">
-          <div class="card-body p-4 p-md-5">
-            <h3 class="fw-bold mb-4">We're Here to Help you!</h3>
-            <form>
-            <div class="mb-3">
-              <label class="form-lab">Name</label>
-              <input class="form-control form-control-lg"type="text" placeholder="Your name"/>
+    </section>
+
+    <section id="testimonials" class="py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Patients Say</h2>
+          <p class="text-muted">Your health, our responsibility!</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex align-items-center">
+                <img class="testimonial-img" src="https://via.placeholder.com/80" alt="Patient 1">
+                <div>
+                  <h5 class="mb-1">John Doe</h5>
+                  <p class="text-muted mt-2"><i>I booked an online consultation, and even had medicines delivered. Highly recommend!</i></p>
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label class="form-lab">Email</label>
-              <input class="form-control form-control-lg"type="email" placeholder="Your Email"/>
-            </div> 
-            <div class="mb-3">
-              <label class="form-lab">health problem</label>
-              <textarea class="form-control form-control-lg" rows="4" placeholder="Your health problem and appointment details"></textarea>
-              <button type="submit" class="btn btn-primary btn-large w-100 mt-4">Book your Appointment</button>
-            </div>   
-            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex align-items-center">
+                <img class="testimonial-img" src="https://via.placeholder.com/80" alt="Patient 2">
+                <div>
+                  <h5 class="mb-1">Harika Padala</h5>
+                  <p class="text-muted mt-2"><i>Needed a doctor for my parents—Medico’s home visit service was a lifesaver!</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex align-items-center">
+                <img class="testimonial-img" src="https://via.placeholder.com/80" alt="Patient 3">
+                <div>
+                  <h5 class="mb-1">Peter Burg</h5>
+                  <p class="text-muted mt-2"><i>Was quickly connected to a dermatologist who guided me properly.</i></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!--Footer-->
-<footer class="bg-dark text-white py-4">
-  <div class="container">
-    <div class="row">
-    <div class="col-md-6">
-      <h5>Call Us</h5>
-      <p> Customer Support: +91 98765 43210<br>
-          Emergency Doctor Visit: +91 87654 32109</p>
-    </div> 
-    <div class="col-md-6 text-md-end">
-      <div class="social-links">
-        <a href="#">
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="bi bi-instagram"></i>
-        </a>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="fw-bold mb-4">We're Here to Help You!</h3>
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Your name" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input class="form-control form-control-lg" type="email" placeholder="Your email" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Health Problem</label>
+                    <textarea class="form-control form-control-lg" rows="4" placeholder="Describe your issue..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div> 
-    </div>
-  </div>
-</footer>
-    <!----Bootstrap JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
