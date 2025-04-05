@@ -1,12 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>mariposa</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-        <style>
-      body, html {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariposa Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -16,269 +16,177 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment:fixed;
-      height: 100vh;
+      background-attachment: fixed;
+      font-family: Consolas, sans-serif;
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 30px;
+    }
+    .section {
+      padding: 40px;
+    }
+    .menu-category {
+      margin-bottom: 30px;
+    }
+    .menu-category h2 {
+      margin-bottom: 10px;
+      color: yellow;
+    }
+    .menu-category ul {
+      list-style: none;
+      margin-left: 20px;
+    }
+    .menu-category img {
+      width: 200px;
+      height: 160px;
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+    .form-section {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .form-section select,
+    .form-section textarea {
+      margin: 10px 0;
+      padding: 5px;
       width: 100%;
     }
-    .restaurent h1{
-                position: absolute;
-                font-size:30px;
-                text-align:"centre";
-                width:300px;
-                margin:0px 500px 350px 600px;
+    .thanks img {
+      display: block;
+      margin: 30px auto 0;
+      width: 500px;
+      height: 80px;
+      border: 1px solid black;
+      border-radius: 3px;
     }
-  .list-container {
-        position:absolute;
-        align-content: flex-start;
-        color:yellow;
-        min-height:20cap;
-        font-family:consola;
-        font-size:25px ;
-        margin-top:80px;
-        margin-left:10px;
+    .icons {
+      text-align: center;
+      margin-top: 20px;
+      color: skyblue;
     }
-    .coffee-image img {
-                width:200px;
-                height: 160px;
-                margin: -160px 250px 400px 250px;
-                border: 1px solid black;
-                border-radius:3px;       
-            }
-        .list2-container {
-        position:absolute;
-        color:yellow;
-        min-height:20cap;
-        font-family:consola;
-        font-size:25px ;
-        margin:-605px 3px 350px 480px;
+    .icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #f40083;
+    }
+  </style>
+</head>
+<body>
+  <h1><i>Mariposa Restaurant</i></h1>
 
-    }
-         .starter-image img {
-                width:200px;
-                height: 160px;
-                margin: -160px 250px 400px 250px;
-                border: 1px solid black;
-                border-radius:3px; 
-                
-            }
-        .list3-container {
-        position:absolute;
-        color:yellow;
-        min-height:20cap;
-        font-family:consola;
-        font-size:25px ;
-        margin:-595px 30px 400px 480px;
-        width:300px;
-
-    }
-     .main-course img {
-                width:200px;
-                height: 160px;
-                margin: -160px 250px 400px 290px;
-                border: 1px solid black;
-                border-radius:3px; 
-                
-            }
-        .list4-container {
-        position:absolute;
-        color:yellow;
-        min-height:20cap;
-        font-family:consola;
-        font-size:25px ;
-        margin:-370px 1000px 400px -450px;
-        width:300px;
-
-    }
-    .desserts img {
-                width:200px;
-                height: 160px;
-                margin: -165px 250px 400px 250px;
-                border: 1px solid black;
-                border-radius:3px; 
-                
-            }
-        .Address{
-        position:absolute;
-        color:white;
-        margin: -350px 250px 400px -450px;
-    }
-    .items-price{
-        position:absolute;
-        color:white;
-        margin: -50px 250px 400px 300px;
-    }
-    .branches{
-        position:absolute;
-        color:white;
-        margin: -50px 250px 400px 300px;
-    }
-    .delivery-address{
-        position:absolute;
-        color:white;
-        margin: -50px 250px 400px 300px;
-
-    }
-    .billing{
-        position:absolute;
-        color:white;
-        margin: -50px 250px 400px 400px;
-
-        
-    }
-    .content {
-            min-height: 200vh; 
-            padding: 30px;
-            position:fixed;
-        }
-        .thanks img{
-
-                width:500px;
-                height: 80px;
-                margin: 20px 250px 0px -900px;
-                border: 1px solid black;
-                border-radius:3px; 
-                padding-bottom:0px ;
-                
-            }
-         .icons{
-        
-        position:absolute;
-        color:blue;
-        min-height:20cap;
-        font-family:consola;
-        font-size:25px ;
-        margin: -80px 250px 0px -1400px;
-        /*margin:1px 1000px 400px -450px;*/
-        width:300px;
-        /*font-family:"underline";*/
-
-            }
-            .fa {
-               padding: 20px;
-               font-size: 30px;
-               width: 50px;
-               text-align: center;
-}
-            .fa-instagram {
-             color:#f40083;
-            }
-
- </style>
-    </head>
-    <body>
-        <div class="content">
-        <div class="background-image">
-            <div class="restaurent">
-                <h1 style="color:whitesmoke"><I>Mariposa Restaurent</I></h1> </div>
-            <div class="list-container">
-                <ul>
-                    <li type="none"style="color:white"><b>BREAK FAST</b></li>
-                    <li>garlic bread</li>
-                    <li>capaccino</li>
-                    <li>hot buns</li>
-                    <li>french toast</li>
-                </ul>
-                <div class="coffee-image">
-                    <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\e29a9f2e-a076-47af-b316-d5e47c864c04.jpg">
-             </div>
-             <div class="list2-container">
-                <ul>
-                    <li type="none" style="color:white"><b>STARTERS</b></li>
-                    <li>indo-thai mango</li>
-                    <li>coconut bhel</li>
-                    <li>paneer tikka</li>
-                    <li>tandoori scallops</li>
-                </ul>
-                <div class="starter-image">
-                    <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\img29428.whqc_600x400q80.jpg">
-                </div>
-                <div class="list3-container">
-                    <ul>
-                        <li type="none" style="color:white"><b>MAIN COURSE</b></li>
-                        <li>Paneer Dum biriyani</li>
-                        <li>pulka</li>
-                        <li>Sambar rice</li>
-                        <li>Pulao</li>
-                    </ul>
-                    <div class="main-course">
-                        <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\th.jpeg">
-                     </div>
-                     <div class="list4-container">
-                        <ul>
-                            <li type="none" style="color:white"><b>DESSERTS</b></li>
-                            <li>choclate mousse</li>
-                            <li>pudding</li>
-                            <li>brownie</li>
-                            <li>Pavlova</li>
-                        </ul>
-                        <div class="desserts">
-                            <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\download.jpeg">
-                        </div>
-                        <div class="Address">
-                            state:<select name ="states">
-                                <option>Andhra pradesh</option>
-                                <option>Tamil Nadu</option>
-                                <option>Madhya Pradesh</option>
-                                <option>Goa</option>
-                                <option>Punjab</option></select>
-                                <div class="items-price">
-                                    items:<select name="items">
-                                        <option>garlic bread       - 200rs</option>
-                                        <option>capaccino          - 150rs-</option>
-                                        <option>hot buns           - 150rs</option>
-                                        <option>french toast       - 250rs</option>
-                                        <option>indo-thai mango    - 500rs</option>
-                                        <option>coconut bhel       - 280rs</option>
-                                        <option>paneer tikka       - 350rs</option>
-                                        <option>tandoori scallops  - 400rs</option>
-                                        <option>Paneer Dum biriyani- 500rs</option>
-                                        <option>pulka              - 290rs</option>
-                                        <option>Sambar rice        - 200rs</option>
-                                        <option>Pulao              - 450rs</option>
-                                        <option>choclate mousse    - 350rs</option>
-                                        <option>pudding            - 200rs</option>
-                                        <option>brownie            - 250rs</option>
-                                        <option>Pavlova            - 550rs</option>
-                                    </select>
-                                    <div class="branches">
-                                        branches:<select name ="branches">
-                                            <option>Amaravati</option>
-                                            <option>Chennai</option>
-                                            <option>Bhopal</option>
-                                            <option>panaji</option>
-                                            <option>Chandigarh</option></select>
-                                            <div class="delivery-address">
-                                                Address:<textarea rows="3" cols="30"></textarea>
-                                                <div class="billing">
-                                                    billing:<select name ="billing">
-                                                        <option>online</option>
-                                                        <option>cash</option>
-                                                        </select>
-                                                       <!----<audio autoplay loop muted>>
-                                                         <source src="WhatsApp Audio 2024-12-22 at 13.14.58_eb35a5f9.mp3" type="audio/mp3">
-                                                        <source src="WhatsApp Audio 2024-12-22 at 13.14.58_eb35a5f9.mp3" type="audio/ogg">
-                                                            Your browser does not support the audio element.
-                                                        </audio>
-                                                        <!-->
-                                                        <div class="thanks">
-                                                        <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\thank.jpeg">
-                                                        <aside>
-                                                        <div class="icons">  
-                                                            <ul type="none" color="skyyblue">
-                                                                <li><a href="https://www.instagram.com/accounts/login/?hl=en" class="fab fa-instagram"></a>mariposa@123</li>
-                                                                <li><a href="#" class="fas fa-envelope"></a>mariposa@gmail.com</li>
-                                                            </ul>
-                                                        </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                    </div>
-                        </div>
-                        </div>
-         </div>
-                </div>
+  <div class="section menu">
+    <div class="menu-category">
+      <h2>BREAKFAST</h2>
+      <ul>
+        <li>Garlic Bread</li>
+        <li>Cappuccino</li>
+        <li>Hot Buns</li>
+        <li>French Toast</li>
+      </ul>
+      <img src="images/breakfast.jpg" alt="Breakfast">
     </div>
-        </div>
-    </body>
+
+    <div class="menu-category">
+      <h2>STARTERS</h2>
+      <ul>
+        <li>Indo-Thai Mango</li>
+        <li>Coconut Bhel</li>
+        <li>Paneer Tikka</li>
+        <li>Tandoori Scallops</li>
+      </ul>
+      <img src="images/starters.jpg" alt="Starters">
+    </div>
+
+    <div class="menu-category">
+      <h2>MAIN COURSE</h2>
+      <ul>
+        <li>Paneer Dum Biryani</li>
+        <li>Pulka</li>
+        <li>Sambar Rice</li>
+        <li>Pulao</li>
+      </ul>
+      <img src="images/maincourse.jpg" alt="Main Course">
+    </div>
+
+    <div class="menu-category">
+      <h2>DESSERTS</h2>
+      <ul>
+        <li>Chocolate Mousse</li>
+        <li>Pudding</li>
+        <li>Brownie</li>
+        <li>Pavlova</li>
+      </ul>
+      <img src="images/dessert.jpg" alt="Desserts">
+    </div>
+  </div>
+
+  <div class="form-section">
+    <label for="states">State:</label>
+    <select name="states" id="states">
+      <option>Andhra Pradesh</option>
+      <option>Tamil Nadu</option>
+      <option>Madhya Pradesh</option>
+      <option>Goa</option>
+      <option>Punjab</option>
+    </select>
+
+    <label for="items">Items:</label>
+    <select name="items" id="items">
+      <option>Garlic Bread - 200rs</option>
+      <option>Cappuccino - 150rs</option>
+      <option>Hot Buns - 150rs</option>
+      <option>French Toast - 250rs</option>
+      <option>Indo-Thai Mango - 500rs</option>
+      <option>Coconut Bhel - 280rs</option>
+      <option>Paneer Tikka - 350rs</option>
+      <option>Tandoori Scallops - 400rs</option>
+      <option>Paneer Dum Biryani - 500rs</option>
+      <option>Pulka - 290rs</option>
+      <option>Sambar Rice - 200rs</option>
+      <option>Pulao - 450rs</option>
+      <option>Chocolate Mousse - 350rs</option>
+      <option>Pudding - 200rs</option>
+      <option>Brownie - 250rs</option>
+      <option>Pavlova - 550rs</option>
+    </select>
+
+    <label for="branches">Branch:</label>
+    <select name="branches" id="branches">
+      <option>Amaravati</option>
+      <option>Chennai</option>
+      <option>Bhopal</option>
+      <option>Panaji</option>
+      <option>Chandigarh</option>
+    </select>
+
+    <label for="delivery">Delivery Address:</label>
+    <textarea name="delivery" rows="3" cols="30"></textarea>
+
+    <label for="billing">Billing Method:</label>
+    <select name="billing" id="billing">
+      <option>Online</option>
+      <option>Cash</option>
+    </select>
+  </div>
+
+  <div class="thanks">
+    <img src="images/thank.jpeg" alt="Thank You">
+  </div>
+
+  <div class="icons">
+    <a href="https://www.instagram.com/accounts/login/?hl=en" class="fab fa-instagram"></a>
+    <a href="mailto:mariposa@gmail.com" class="fas fa-envelope"></a>
+    <p>mariposa@123 | mariposa@gmail.com</p>
+  </div>
+</body>
 </html>
