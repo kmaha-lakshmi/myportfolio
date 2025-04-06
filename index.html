@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="styleproject-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img id="logo" src="project2images/logo.jpg">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#MYwork">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>FRONTEND Developer</p>
+                <h1>Hi, I'm <span>Maha</span><br>A Developer</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="aboutme" src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\project2images\pic2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am Mahalakshmi Kommoju, a BTech student specializing in Computer Science Engineering with a focus on Artificial Intelligence and Machine Learning, currently maintaining a CGPA of 7.82. I achieved a perfect CGPA of 10/10 in my 10th grade at Jawaharlal Nehru Municipal School. With a strong passion for technology and coding, I am proficient in programming languages such as C++, Java, Python, HTML/CSS, and SQL. Recently, I completed an internship at Technical Hub as a Full Stack and Java Developer, where I contributed to the development of portfolios and websites and honed my problem-solving skills by tackling Java-based challenges. Prior to this, I gained experience as a Frontend Developer, creating basic restaurant websites. Beyond my technical endeavors, I manage a YouTube channel, Just Think of It18, where I share engaging informational and historical content, fostering connections with a diverse audience.</p>
+                    <div class="tab-titles">
+                        <ul>
+                            <li class="tab-links active" onclick="opentab('skills')">Skills</li>
+                            <li class="tab-links" onclick="opentab('Experience')">Experience</li>
+                            <li class="tab-links" onclick="opentab('Education')">Education</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li>Frontend Developer <span> - Designing websites</span></li>
+                            <li>Java Developer <span> - Problem-solving</span></li>
+                            <li>Machine learning <span> - Developing Models</span></li>
+                            <li>Framework - Bootstrap <span> - UI development</span></li>
+                            <li>Database Developer <span> - SQL </span></li>
+                            <li>Content Creator <span> - Engaging diverse audiences</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>2024<span> - Web developement Internship at Technical Hub</span></li>
+                            <li>2024<span>- Java Internship </span></li>
+                            <li>2025<span>- Full Stack Development Internship at techno hacks</span></li>
+                            <li>2024 - current<span>- Content Creator </span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>2020 <span>- Completed 10th at Jawaharlal Nehru Municipal School </span></li>
+                            <li>2020-2022<span> - Completed Intermediate</span></li>
+                            <li>2022-2026 <span>- Pursuing BTech 3rd year at Aditya</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function opentab(tabname) {
+            document.querySelectorAll('.tab-contents').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-links').forEach(link => link.classList.remove('active'));
+            document.getElementById(tabname).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+        const navLinks = document.querySelector("nav ul");
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+    </script>
+    <div id="Services">
+        <h1 class="subtitle">MY <span>SERVICES</span></h1>
+        <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p> creating visually appealing,user-friendly,and functional websites and interactive elements to enhance user experience.
+                </p>
+                     <a href="C:\Users\k maha lakshmi\OneDrive\Desktop\web\mywebdesigingworkpro2.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Developer</h2>
+                <p> writing efficient and optimized code to solve complex problems using Java.
+                     </p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i>
+                <h2>Machine Learning</h2>
+                <p>  implementing ML and DL programs and experiments using Python.
+                     <a href="#">Learn more</a>
+            </div>
+   
+              </div>
+
+        </div>
+
+    </div>
+    <!------portofolio-->
+    <div id="MYwork">
+        <div class="container">
+            <h1 class="subtitle">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\project2images\work1.jpeg">
+                    <div class="layer">
+                        <h3>Designing websites</h3>
+                        <p>Web Designing is the process of creating visually appealing, user-friendly, and functional websites.</p>
+                        <a href="C:\Users\k maha lakshmi\OneDrive\Desktop\Boostrap\landingwebsiteproject3\indexpro3.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\project2images\work2.jpeg">
+                    <div class="layer">
+                        <h3>Java Developer</h3>
+                        <p>Solving complex problems using efficient algorithms and data structures.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\k maha lakshmi\OneDrive\Desktop\web\project2images\work3.jpeg">
+                    <div class="layer">
+                        <h3>Promotion</h3>
+                        <p>On my YouTube channel, Just Think of It18. Whether it's a brand, a product, or an idea, I create engaging and creative promotions to reach a wider audience.</p>
+                        <a href="https://www.youtube.com/@Just_think_of_it18"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="C:\Users\k maha lakshmi\OneDrive\Desktop\web\project1.html" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----contact------>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mahalakshmikommoju986@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>012345667</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-github"></i></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                   <a href="C:\Users\k maha lakshmi\Downloads\resume2025.pdf"download class="btn btn2">Download Resume</a> 
+                </div>
+                <div class="contact-right">
+                    <form>
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                      <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit"class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Maha lakshmi kommoju</p>
+        </div>
+    </div>
+
+</body>
+</html>
