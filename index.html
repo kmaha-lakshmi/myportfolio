@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MY PORTFOLIO</title>
-  <link rel="stylesheet" href="styleproject-2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styleproject-2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+  <!-- Header -->
   <div id="header">
-    <div id="container">
+    <div class="container">
       <nav>
-        <img id="logo" src="https://github.com/kmaha-lakshmi/myportfolio/blob/main/logo.jpg?raw=true" alt="Logo">
+        <img id="logo" src="https://github.com/kmaha-lakshmi/myportfolio/blob/main/logo.jpg?raw=true" alt="Logo" />
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#MYwork">Portfolio</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#mywork">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header-text">
         <p>FRONTEND Developer</p>
-        <h1>Hi, I'm <span>Maha</span><br>A Developer</h1>
+        <h1>Hi, I'm <span>Maha</span><br />A Developer</h1>
       </div>
     </div>
   </div>
 
+  <!-- About -->
   <div id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
- <img class="aboutme" src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/pic2.jpg" alt="About Me">
+          <img class="aboutme" src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/pic2.jpg" alt="About Me" />
         </div>
         <div class="about-col-2">
           <h1 class="subtitle">About Me</h1>
           <p>I am Mahalakshmi Kommoju, a BTech student specializing in Computer Science Engineering with a focus on Artificial Intelligence and Machine Learning...</p>
           <div class="tab-titles">
             <ul>
-              <li class="tab-links active" onclick="opentab('skills')">Skills</li>
-              <li class="tab-links" onclick="opentab('Experience')">Experience</li>
-              <li class="tab-links" onclick="opentab('Education')">Education</li>
+              <li class="tab-links active" onclick="opentab(event, 'skills')">Skills</li>
+              <li class="tab-links" onclick="opentab(event, 'experience')">Experience</li>
+              <li class="tab-links" onclick="opentab(event, 'education')">Education</li>
             </ul>
           </div>
           <div class="tab-contents active" id="skills">
             <ul>
               <li>Frontend Developer <span> - Designing websites</span></li>
               <li>Java Developer <span> - Problem-solving</span></li>
-              <li>Machine learning <span> - Developing Models</span></li>
-              <li>Framework - Bootstrap <span> - UI development</span></li>
-              <li>Database Developer <span> - SQL </span></li>
+              <li>Machine Learning <span> - Developing Models</span></li>
+              <li>Bootstrap <span> - UI development</span></li>
+              <li>Database Developer <span> - SQL</span></li>
               <li>Content Creator <span> - Engaging diverse audiences</span></li>
             </ul>
           </div>
-          <div class="tab-contents" id="Experience">
+          <div class="tab-contents" id="experience">
             <ul>
-              <li>2024<span> - Web Development Internship at Technical Hub</span></li>
-              <li>2024<span> - Java Internship </span></li>
-              <li>2025<span> - Full Stack Development Internship at Technohacks</span></li>
-              <li>2024 - current<span> - Content Creator </span></li>
+              <li>2024 <span> - Web Development Internship at Technical Hub</span></li>
+              <li>2024 <span> - Java Internship</span></li>
+              <li>2025 <span> - Full Stack Internship at Technohacks</span></li>
+              <li>2024 - Present <span> - Content Creator</span></li>
             </ul>
           </div>
-          <div class="tab-contents" id="Education">
+          <div class="tab-contents" id="education">
             <ul>
-              <li>2020 <span> - Completed 10th at Jawaharlal Nehru Municipal School </span></li>
-              <li>2020-2022<span> - Completed Intermediate</span></li>
-              <li>2022-2026 <span> - Pursuing BTech 3rd year at Aditya</span></li>
+              <li>2020 <span> - 10th at Jawaharlal Nehru Municipal School</span></li>
+              <li>2020-2022 <span> - Intermediate</span></li>
+              <li>2022-2026 <span> - BTech 3rd Year at Aditya Engineering College</span></li>
             </ul>
           </div>
         </div>
@@ -74,45 +76,40 @@
     </div>
   </div>
 
-  <script>
-    function opentab(tabname) {
-      document.querySelectorAll('.tab-contents').forEach(tab => tab.classList.remove('active'));
-      document.querySelectorAll('.tab-links').forEach(link => link.classList.remove('active'));
-      document.getElementById(tabname).classList.add('active');
-      event.currentTarget.classList.add('active');
-    }
-  </script>
-
-  <div id="Services">
-    <h1 class="subtitle">MY <span>SERVICES</span></h1>
-    <div class="Services-list">
-      <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>Web Designing</h2>
-        <p>Creating visually appealing, user-friendly, and functional websites.</p>
-        <a href="mywebdesigingworkpro2.html">Learn more</a>
-      </div>
-      <div>
-        <i class="fa-brands fa-java"></i>
-        <h2>Java Developer</h2>
-        <p>Writing efficient and optimized code to solve complex problems using Java.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div>
-        <i class="fa-solid fa-gear"></i>
-        <h2>Machine Learning</h2>
-        <p>Implementing ML and DL programs and experiments using Python.</p>
-        <a href="#">Learn more</a>
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My <span>Services</span></h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Designing</h2>
+          <p>Creating visually appealing, user-friendly, and functional websites.</p>
+          <a href="mywebdesigingworkpro2.html">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>Java Developer</h2>
+          <p>Writing efficient and optimized code to solve complex problems using Java.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-gear"></i>
+          <h2>Machine Learning</h2>
+          <p>Implementing ML and DL programs and experiments using Python.</p>
+          <a href="#">Learn more</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div id="MYwork">
+  <!-- My Work -->
+  <div id="mywork">
     <div class="container">
-      <h1 class="subtitle">MY WORK</h1>
+      <h1 class="subtitle">My Work</h1>
       <div class="work-list">
         <div class="work">
-         <img src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/work1.jpeg" alt="Work 1">
+          <img src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/work1.jpeg" alt="Work 1" />
           <div class="layer">
             <h3>Designing Websites</h3>
             <p>Creating visually appealing, user-friendly, and functional websites.</p>
@@ -120,7 +117,7 @@
           </div>
         </div>
         <div class="work">
-          <img src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/work2.jpeg" alt="Work 2">
+          <img src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/work2.jpeg" alt="Work 2" />
           <div class="layer">
             <h3>Java Developer</h3>
             <p>Solving complex problems using efficient algorithms and data structures.</p>
@@ -128,7 +125,7 @@
           </div>
         </div>
         <div class="work">
-       <img src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/work3.jpeg" alt="Work 3">
+          <img src="https://raw.githubusercontent.com/kmaha-lakshmi/myportfolio/main/work3.jpeg" alt="Work 3" />
           <div class="layer">
             <h3>Promotion</h3>
             <p>Promoting content on my YouTube channel, Just Think of It18.</p>
@@ -140,7 +137,8 @@
     </div>
   </div>
 
-  <div id="Contact">
+  <!-- Contact -->
+  <div id="contact">
     <div class="container">
       <div class="row">
         <div class="contact-left">
@@ -148,17 +146,17 @@
           <p><i class="fa-solid fa-paper-plane"></i> mahalakshmikommoju986@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i> 012345667</p>
           <div class="social-icons">
-            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kmaha-lakshmi"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/yourusername"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a>
           </div>
           <a href="assets/resume2025.pdf" download class="btn btn2">Download Resume</a>
         </div>
         <div class="contact-right">
           <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
         </div>
@@ -169,5 +167,18 @@
     </div>
   </div>
 
+  <!-- JavaScript -->
+  <script>
+    function opentab(event, tabname) {
+      const tabContents = document.querySelectorAll('.tab-contents');
+      const tabLinks = document.querySelectorAll('.tab-links');
+
+      tabContents.forEach(tab => tab.classList.remove('active'));
+      tabLinks.forEach(link => link.classList.remove('active'));
+
+      document.getElementById(tabname).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
 </body>
 </html>
